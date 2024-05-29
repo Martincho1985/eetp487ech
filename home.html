@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Leiva Martin">
+    <title>English Agriculture</title>
+    <link rel="icon" type="segador.png" href="./assets/img/tractores.png">
+    <link rel="stylesheet" href="./assets/css/main_style.css">
+    <link rel="stylesheet" href="./assets/css/calendar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/iconos.css">
+    <script src="./assets/js/banner.js"></script>
+</head>
+<body>
+    <main class="contenedor">
+        <header class="cabecera">
+            <img id="logo" src="./assets/img/logo.png" alt="logo">
+            <img id="nombre_pagina" src="./assets/img/nombre_pagina.png" alt="">
+        </header>
+        <nav class="menu">
+            <div class="cursos" id="toggleButton">
+                <p>Classes >>></p>
+            </div>
+            <div class="botonera">
+                <ul>
+                    <li><a href="./classes/first.html">1st YEAR</a></li>
+                    <li><a href="./classes/second.html">2nd YEAR</a></li>
+                    <li><a href="./classes/third.html">3rd YEAR</a></li>
+                    <li><a href="./classes/fourth.html">4th YEAR</a></li>
+                    <li><a href="./classes/fifth.html">5th YEAR</a></li>
+                    <li><a href="./classes/sixth.html">6th YEAR</a></li>
+                </ul>
+            </div>
+        </nav>
+        <article class="cuerpo">
+            <div>
+                <h1 class="saludo">WELCOME--</h1>
+                <img id="tractor" src="./assets/img/tractor.png" alt="tractor">
+            </div>
+            <section class="banner">
+                <h2>INGLÉS || INGLÉS TÉCNICO</h2>
+                <h3>Docente: Prof. Lic. Leiva Martin R.</h3>
+                <img src="./assets/img/cultivos.jpg" alt="cultivos" class="active">
+                <img src="./assets/img/cultivos2.jpg" alt="cultivos2">
+                <img src="./assets/img/cultivos3.jpg" alt="cultivos3">
+                <img src="./assets/img/cultivos4.jpg" alt="cultivos4">
+            </section>
+            <section>
+                <h1 class="timetable">"School Timetable of English in E.E.T.P. N° 487 'C.A.S.'"</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="hora">Time</td>
+                            <td class="days">Monday</td>
+                            <td class="days">Tuesday</td>
+                            <td class="days">Wednesday</td>
+                            <td class="days">Thursday</td>
+                            <td class="days">Friday</td>
+                        </tr>
+                        <tr>
+                            <td class="hora">07:30 - 8:10</td>
+                            <td class="clase">6th FORM</td>
+                            <td class="vacio"></td>
+                            <td class="clase">3rd FORM</td>
+                            <td class="vacio"></td>
+                            <td class="clase">2nd FORM</td>
+                        </tr>
+                        <tr>
+                            <td class="hora">08:10 - 8:50</td>
+                            <td class="clase">6th FORM</td>
+                            <td class="vacio"></td>
+                            <td class="clase">3rd FORM</td>
+                            <td class="vacio"></td>
+                            <td class="clase">2nd FORM</td>
+                        </tr>
+                        <tr>
+                            <td class="hora">09:00 - 9:40</td>
+                            <td class="clase">5th FORM</td>
+                            <td class="vacio"></td>
+                            <td class="clase">3rd FORM</td>
+                            <td class="vacio"></td>
+                            <td class="clase">2nd FORM</td>
+                        </tr>
+                        <tr>
+                            <td class="hora">09:40 - 10:20</td>
+                            <td class="clase">5th FORM</td>
+                            <td class="vacio"></td>
+                            <td class="clase">1st FORM</td>
+                            <td class="vacio"></td>
+                            <td class="clase">4th FORM</td>
+                        </tr>
+                        <tr>
+                            <td class="hora">10:30 - 11:10</td>
+                            <td class="vacio"></td>
+                            <td class="vacio"></td>
+                            <td class="clase">1st FORM</td>
+                            <td class="vacio"></td>
+                            <td class="clase">4th FORM</td>
+                        </tr>
+                        <tr>
+                            <td class="hora">11:10 - 11:50</td>
+                            <td class="vacio"></td>
+                            <td class="vacio"></td>
+                            <td class="clase">1st FORM</td>
+                            <td class="vacio"></td>
+                            <td class="clase">4th FORM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+        <aside class="columna">
+            <img class="translator" src="./assets/img/spanishdict-translator-1.jpg" alt="SpanishDict">
+            <h2>English Translator</h2>
+            <p>Translate English to Spanish using the Ingles.com Translator:</p>
+            <div class="spanishdict-enlace">
+                <img class="icono-dic" src="./assets/img/spanishdict.png" alt="SpanishDict">
+                <a class="boton-enlace" href="https://www.ingles.com/traductor" target="_blank">Go to SpanishDict</a>
+            </div>
+             <!-- calendario mensual -->
+            <div class="calendario">
+                <div class="calendar" id="calendar"></div>
+            </div>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+            <script src="./assets/js/calendar.js"></script>
+            <script type="text/javascript">
+                let calendar = new Calendar('calendar');
+            </script>
+        </aside>
+        <footer>
+            <div class="contacto">
+                <p>Copyright © 2024 - Leiva Martín R.</p>
+                <p><span class="icon-envelope"></span>englishcultivatehub@gmail.com &emsp;|| &emsp;<span class="icon-whatsapp"></span>(3482)-666150</p> 
+            </div>
+            <div class="redes">
+                <img class="logo-escuela" src="./assets/img/logo_escuela.jpeg" alt="logo_escuela">
+                <img class="escuela" src="./assets/img/agrotecnica.jpg" alt="Escuela">
+                <a href="https://www.facebook.com/groups/174789172685781" target="_blank" class="icon-facebook2"></a>
+                <a href="https://www.instagram.com/agro487cas/?hl=es-la" target="_blank" class="icon-instagram"></a>
+            </div>
+        </footer>
+    </main>
+    <script src="/assets/js/menu-desplegable.js"></script>
+</body>
+</html>

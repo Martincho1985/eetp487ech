@@ -1,0 +1,109 @@
+.calendario{
+    max-height: 350px;
+    padding: 0 15px;
+    margin-top: 50px;
+    display: flex; 
+}
+.calendar{
+    padding: 20px 10px;
+    background-color: green;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 5px rgb(4, 62, 4);
+}
+.calendar-header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.calendar .control{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.calendar .control:hover{
+    background-color: rgb(4, 62, 4);
+}
+.grid__header, .grid__body{ /*DISPLAY en cuadricula de los dias y numeros*/
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.grid__header{
+    color: yellow;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.grid__body{
+    color: white;
+    grid-auto-rows: 40px;
+}
+.grid__cell{ /*numeros y dias centrados*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid__cell--gd{
+    cursor: pointer;
+}
+.grid__cell--selected{ /*seleccion de celdas (forma de circulo)*/
+    color:yellow;
+    background-color:rgb(4, 62, 4);
+    border-radius: 50%;
+    border: 2px solid yellow;
+}
+.grid__cell--disabled{
+    color: rgb(11, 162, 11);
+    cursor: not-allowed;
+}
+
+/*-----------------------------------------------------------------*/
+
+@media all and (min-width:600px) and (max-width:1024px){
+
+    .calendario{
+        max-height: 200px;
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+    .calendar{
+        padding: 20px 10px;
+        width: 100%;
+        max-width: 190px;
+    }
+    .calendar-header{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .grid__header, .grid__body{ /*DISPLAY en cuadricula de los dias y numeros*/
+        font-size: 10px;
+    }
+    .grid__header{
+        margin-bottom: 3px; 
+    }
+    .grid__body{
+        grid-auto-rows: 20px;
+    }
+} /*Cierre media de 600px a 959px*/
+
+/*-----------------------------------------------------------------*/
+
+@media all and (max-width:599px){
+
+    .calendario{
+        padding: 0 50px;
+        margin-top: 30px;
+    }
+    .grid__header, .grid__body{ /*DISPLAY en cuadricula de los dias y numeros*/
+        font-size: 10px;
+    }
+    .grid__body{
+        grid-auto-rows: 20px;
+    }
+}
